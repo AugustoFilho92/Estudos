@@ -1,0 +1,9 @@
+# Lê as duas notas de ponto flutuante de dupla precisão
+nota_a = float(input())
+nota_b = float(input())
+
+# Calcula a média ponderada das notas
+media = (nota_a * 3.5 + nota_b * 7.5) / 11.0
+
+# Imprime o resultado com 5 dígitos após o ponto decimal
+print("MEDIA = {:.5f}".format(media))
