@@ -1,12 +1,11 @@
-# leitura do valor de entrada em segundos
-segundos = int(input())
+# Lê o valor inteiro N
+N = int(input())
 
-# cálculo das horas, minutos e segundos
-horas = segundos // 3600
-segundos = segundos % 3600
+# Calcula as horas, minutos e segundos a partir do valor de N
+horas = N // 3600
+N = N % 3600
+minutos = N // 60
+segundos = N % 60
 
-minutos = segundos // 60
-segundos = segundos % 60
-
-# exibição do resultado no formato horas:minutos:segundos
-print(f"{horas}:{minutos:02}:{segundos:02}")
+# Imprime o resultado no formato desejado
+print('{}:{}:{}'.format(horas, minutos, segundos))
