@@ -1,0 +1,11 @@
+while True:
+    entrada = input().strip()
+    if entrada == "-1":
+        break
+
+    if entrada.startswith("0x"):
+        valor_decimal = int(entrada[2:], 16)
+        print("{}".format(valor_decimal))
+    else:
+        valor_hexadecimal = hex(int(entrada))
+        print("0x{}".format(valor_hexadecimal[2:].upper()))
