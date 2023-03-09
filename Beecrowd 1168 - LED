@@ -1,0 +1,9 @@
+leds = [6, 2, 5, 5, 4, 5, 6, 3, 7, 6]
+
+n = int(input().strip())
+for i in range(n):
+    value = input().strip()
+    led_count = 0
+    for char in value:
+        led_count += leds[int(char)]
+    print(led_count, "leds")
