@@ -1,1 +1,12 @@
+while True:
+    a, b = map(int, input().split())
+    if a == 0 and b == 0:
+        break
 
+    alice_cards = set(map(int, input().split()))
+    beatriz_cards = set(map(int, input().split()))
+
+    intersecao = alice_cards.intersection(beatriz_cards)
+    trocas = min(len(alice_cards - intersecao), len(beatriz_cards - intersecao))
+
+    print(trocas)
