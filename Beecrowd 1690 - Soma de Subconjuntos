@@ -1,0 +1,14 @@
+def smallest_unreachable(nums):
+    nums.sort()
+    unreachable = 1
+    for num in nums:
+        if num > unreachable:
+            return unreachable
+        unreachable += num
+    return unreachable
+
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    nums = list(map(int, input().split()))
+    print(smallest_unreachable(nums))
