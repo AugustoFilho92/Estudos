@@ -1,0 +1,20 @@
+while True:
+    n = int(input())
+    if n == 0:
+        break
+    
+    camisetas = []
+    for i in range(n):
+        nome = input()
+        cor_tamanho = input().split()
+        cor = cor_tamanho[0]
+        tamanho = cor_tamanho[1]
+        camisetas.append((cor, tamanho, nome))
+    
+    # ordena as camisetas pela cor, tamanho e nome
+    camisetas.sort(key=lambda c: (c[0], -ord(c[1]), c[2]))
+    
+    # imprime a lista de camisetas
+    for c in camisetas:
+        print("{} {} {}".format(c[0], c[1], c[2]))
+    print()  # imprime uma linha em branco entre cada caso de teste
