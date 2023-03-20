@@ -1,0 +1,14 @@
+while True:
+    try:
+        n = int(input())
+    except EOFError:
+        break
+
+    livros = []
+    for i in range(n):
+        codigo = input().strip()
+        livros.append(codigo)
+
+    livros_ordenados = sorted(livros)
+    for codigo in livros_ordenados:
+        print(codigo)
