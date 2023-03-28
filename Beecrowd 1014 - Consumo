@@ -1,0 +1,6 @@
+# lê os valores de entrada
+distancia = int(input())
+combustivel = float(input())
+
+# calcula o consumo médio e exibe o resultado
+print("%.3f km/l" % (distancia / combustivel))
