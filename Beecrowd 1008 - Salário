@@ -1,0 +1,11 @@
+# leitura dos valores de entrada
+numero_funcionario = int(input())
+horas_trabalhadas = int(input())
+valor_hora = float(input())
+
+# cálculo do salário
+salario = horas_trabalhadas * valor_hora
+
+# impressão do resultado
+print("NUMBER =", numero_funcionario)
+print("SALARY = U$ {:.2f}".format(salario))
